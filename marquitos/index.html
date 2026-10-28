@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Página Principal</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; text-align: center; }
+    button { padding: 10px 15px; margin: 8px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>Menú de Aprendizaje de Objetos JS</h1>
+  <p>Por favor, haz clic en cada botón para abrir la ventana de prácticas:</p>
+
+  <!-- Mis seis botoncitos -->
+  <button onclick="abrirVentana('1_location.html')">1. Objeto Location</button>
+  <button onclick="abrirVentana('2_history.html')">2. Objeto History</button>
+  <button onclick="abrirVentana('3_document.html')">3. Objeto Document</button>
+  <button onclick="abrirVentana('4_window.html')">4. Objeto Window</button>
+  <button onclick="abrirVentana('5_screen.html')">5. Objeto Screen</button>
+  <button onclick="abrirVentana('6_navigator.html')">6. Objeto Navigator</button>
+
+  <script>
+    // Función para abrir una ventanita emergente
+    function abrirVentana(pagina) {
+      window.open(pagina, '_blank', 'width=500,height=500,top=100,left=100');
+    }
+  </script>
+
+</body>
+</html>

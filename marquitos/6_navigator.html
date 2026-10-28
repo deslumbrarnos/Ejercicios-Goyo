@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Objeto Navigator</title>
+</head>
+<body>
+  <h2>6. Objeto Navigator (Datos del Navegador)</h2>
+  
+  <p id="infoNavegador"></p>
+
+  <script>
+    // Aquí se ven las propiedades del navegador
+    document.getElementById("infoNavegador").innerHTML = 
+      "<b>Idioma (language):</b> " + navigator.language + "<br>" +
+      "<b>¿Está conectado a internet? (onLine):</b> " + navigator.onLine + "<br>" +
+      "<b>Información del agente/navegador (userAgent):</b> " + navigator.userAgent;
+  </script>
+</body>
+</html>

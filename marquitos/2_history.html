@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Objeto History</title>
+</head>
+<body>
+  <h2>2. Objeto History (Historial del Navegador)</h2>
+  
+  <p id="infoHistorial"></p>
+
+  <button onclick="irAtras()">Volver Atrás (back)</button>
+  <button onclick="irAdelante()">Ir Adelante (forward)</button>
+
+  <script>
+    // Aquí muestro cuántas páginas hay en el historial
+    document.getElementById("infoHistorial").innerHTML = 
+      "<b>Páginas guardadas en esta pestaña (length):</b> " + history.length;
+
+    function irAtras() {
+      history.back(); //  la flecha atrás del navegador
+    }
+
+    function irAdelante() {
+      history.forward(); // la flecha de adelante
+    }
+  </script>
+</body>
+</html>

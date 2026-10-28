@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Objeto Screen</title>
+</head>
+<body>
+  <h2>5. Objeto Screen (Información del Monitor/Pantalla)</h2>
+  
+  <p id="infoPantalla"></p>
+
+  <script>
+    // Aquí van las propiedades del objeto screen
+    document.getElementById("infoPantalla").innerHTML = 
+      "<b>Ancho total del monitor (width):</b> " + screen.width + "px<br>" +
+      "<b>Alto total del monitor (height):</b> " + screen.height + "px<br>" +
+      "<b>Ancho disponible (availWidth):</b> " + screen.availWidth + "px<br>" +
+      "<b>Alto disponible sin barra de tareas (availHeight):</b> " + screen.availHeight + "px<br>" +
+      "<b>Profundidad de color (colorDepth):</b> " + screen.colorDepth + " bits";
+  </script>
+</body>
+</html>

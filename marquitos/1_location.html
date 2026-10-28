@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Objeto Location</title>
+</head>
+<body>
+  <h2>1. Objeto Location (Información de la URL)</h2>
+  
+  <p id="infoURL"></p>
+
+  <button onclick="recargarPagina()">Recargar Página (reload)</button>
+  <button onclick="irAGoogle()">Ir a Google (assign)</button>
+
+  <script>
+    // Aquí muestro las propiedades del objeto location
+    document.getElementById("infoURL").innerHTML = 
+      "<b>URL completa (href):</b> " + location.href + "<br>" +
+      "<b>Nombre del Host (hostname):</b> " + location.hostname + "<br>" +
+      "<b>Ruta de archivo (pathname):</b> " + location.pathname + "<br>" +
+      "<b>Protocolo (protocol):</b> " + location.protocol;
+
+    // Métodos del location
+    function recargarPagina() {
+      location.reload();
+    }
+
+    function irAGoogle() {
+      location.assign("https://www.google.com");
+    }
+  </script>
+</body>
+</html>

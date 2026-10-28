@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Objeto Document</title>
+</head>
+<body>
+  <h2 id="titulo">3. Objeto Document (El contenido de la página)</h2>
+  
+  <p id="textoEjemplo">Este es un texto original.</p>
+
+  <button onclick="cambiarTexto()">Cambiar Texto</button>
+  <button onclick="cambiarFondo()">Cambiar Color de Fondo</button>
+  <button onclick="crearParrafo()">Agregar Nuevo Parrafo</button>
+
+  <script>
+    // Aquí van las propiedades básicas del document
+    console.log("Título del documento: ", document.title);
+    console.log("URL del documento:", document.URL);
+
+    // Métodos de document
+    function cambiarTexto() {
+      document.getElementById("textoEjemplo").innerText = "¡El texto ha cambiado gracias al DOM, yeiii!";
+    }
+
+    function cambiarFondo() {
+      document.body.style.backgroundColor = "lightyellow";
+    }
+
+    function crearParrafo() {
+      let nuevoP = document.createElement("p");
+      nuevoP.innerText = "¡Holaa! Soy un párrafo creado con document.createElement()";
+      document.body.appendChild(nuevoP);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Objeto Window</title>
+</head>
+<body>
+  <h2>4. Objeto Window (La Ventana del Navegador)</h2>
+  
+  <p id="infoVentana"></p>
+
+  <button onclick="mostrarAlerta()">Lanzar alert()</button>
+  <button onclick="pedirNombre()">Lanzar prompt()</button>
+  <button onclick="cerrarEstaVentana()">Cerrar esta Ventana (close)</button>
+
+  <script>
+    // Aquí se va a mostrar el tamaño actual de esta ventana
+    document.getElementById("infoVentana").innerHTML = 
+      "<b>Ancho de la ventana:</b> " + window.innerWidth + "px<br>" +
+      "<b>Alto de la ventana:</b> " + window.innerHeight + "px";
+
+    // Aquí se ven los métodos típicos del objeto window
+    function mostrarAlerta() {
+      window.alert("¡Hola! Esta es una alerta de window.");
+    }
+
+    function pedirNombre() {
+      let nombre = window.prompt("¿Cómo te llamas?");
+      if(nombre) {
+        alert("¡Un gusto conocerte, " + nombre + "!");
+      }
+    }
+
+    function cerrarEstaVentana() {
+      window.close(); // Cierrar la ventana emergente
+    }
+  </script>
+</body>
+</html>
